@@ -22,7 +22,7 @@
        
 
       <div>
-    <ul id=" myList" style= "list-style-type:none; margin: 0; padding: 0;  overflow: hidden; background-color: #333; position: fixed; top:0; width: 100%;">
+    <ul id=" myList" style= "list-style-type:none; margin: 0; padding: 0;  overflow: hidden; background-color: #333; position: fixed; top:0; width: 100%; z-index:1; margin-bottom:16px;">
         <!-- style= "list-style-type: none; margin: 0; padding: 0;  overflow: hidden; background-color: #333 -->
        <li style="display: inline ; float: left; border-right: 1px solid #bbb; color: white;"><a href="/" style=" display: block; color:white; text-decoration: none; padding: 14px 16px; text-align: center;">Home</a></li>
        <li style="display: inline; float: left; border-right: 1px solid #bbb; color: white; "><a href="./contact" style=" display: block; color:white; text-decoration: none; padding: 14px 16px; text-align: center;">Contact</a></li>
@@ -35,11 +35,12 @@
 
 
 <div class="container row mt-5 text-center" style="margin-left: auto; margin-right: auto">
+    <!-- row mt-5 text-center -->
 
 <form method="post" action="{% url 'search' %}" class=" form-inline mb-5">
     {% csrf_token %}
     <div class="form-group">
-        <input type="text" name="userText" class="form-control" placeholder="What do you have in mind?..." style="display: inline-block; width: 30%;"/>
+        <input type="text" name="userText" class="form-control" placeholder="What do you have in mind?..." style="display: inline-block; width: 30%; margin-top: 16px;"/>
         <input type="submit" class ="btn btn-primary" value="Search"/>
     </div>
 </form>
@@ -48,7 +49,7 @@
     {% for recipe in recipes %}
 
     <div class="col-lg-3 col-sm-12 mb-3">
-        <div class=" card" style="width:18rem; margin:0 auto">
+        <div class=" card" style="width:18rem; margin:32px">
         <img src= "{{recipe.recipe.image}}" class="card-img-top"/>
         <div class=" card-body">
           <h5 class="card-title"> {{recipe.recipe.label }}</h5>
