@@ -75,15 +75,15 @@ section{
     padding-bottom: 50px;
 }
 
-.container {
+/* .container {
     display: flex;
     justify-content: space-around;
     max-width: 1080px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; */
     /* margin-left: 20px;
     margin-right: 20px; */
-}
+/* } */
 
 .section-header {
  margin-bottom: 50px;

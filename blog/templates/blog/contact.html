@@ -23,9 +23,10 @@
     <div>
         <ul id=" myList" style= "list-style-type: none; margin: 0; padding: 0;  overflow: hidden; background-color: #333" >
         
-           <li style="display: inline ; float: left; border-right: 1px solid #bbb; color: white;"><a href="/" style=" display: block; color:white; text-decoration: none; padding: 14px 16px; text-align: center;">Home</a></li>
+           <li style="display: inline ; float: left; border-right: 1px solid #bbb; color: white;"><a href="./" style=" display: block; color:white; text-decoration: none; padding: 14px 16px; text-align: center;">Home</a></li>
            <li style="display: inline; float: left; border-right: 1px solid #bbb; color: white; "><a href="./contact" style=" display: block; color:white; text-decoration: none; padding: 14px 16px; text-align: center;">Contact</a></li>
            <li style="display: inline; float: left; border-right: 1px solid #bbb; color: white; border-right: none"><a href="./about" style=" display: block; color:white; text-decoration: none; padding: 14px 16px; text-align: center;">About</a></li>
+           <li style="display: inline; float: right; border-right: 1px solid #bbb; color: white; border-right: none"><a href="./login" style=" display: block; color:white; text-decoration: none; padding: 14px 16px; text-align: center;">Login</a></li>
         
         </ul>
     </div>
@@ -33,21 +34,23 @@
 
     <section>
         <div class=" section-header">
-            <div class=" container">
+            <div class=" container" style= "background-color: #ccc" >
                 <h2>Contact Info</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Officiis, enim, est laboriosam aperiam aliquam quam fugiat eius inventore soluta tenetur rem, 
-                    ipsa quos? Molestias animi ipsam esse dolorum id culpa?</p>
+                <p>Do you like the hand-picked recipes we have for you?  
+                    <p>We'd love to hear what you think about the website!</p>
+                    <p>Feel free to contact us if you want to see any recipes that you want to see!!</p>
+                    </p>
             </div>
         </div>
 
         <div class=" container">
             <div class="row">
 
-                <div class="contact-info">
+                <div class="contact-info" style= "background-color: #ccc">
                     <div class="contact-info-item">
                         <div class="contact-info-icon">
-                            <i class= "fas fa-home"></i>
+                            <i class= "fas fa-home" style= "background-color: #ccc"></i>
+
                         </div>
 
                         <div
@@ -91,7 +94,7 @@
 
 
                </div>
-               <div class="contact-form">
+               <div class="contact-form" style= "background-color: #ccc">
                 <form id="contact-form">
                     <h2>Send Message</h2>
                     <div class="input-box">
@@ -112,6 +115,21 @@
                     <div class="input-box">
                         <input type="submit"
                         value="Send">
+                        <style>
+                        .contact-form .input-box input
+                            [type="submit"] {
+                            width: 100%;
+                             background: #00bcd4;
+                             color: #ffff;
+                             border: none;
+                                cursor: pointer;
+                                 padding: 10px;
+                                 border:none;
+                                font-size: 18px;
+                                border: 1px solid #00bcd4;
+                                        transition: 0.5s;
+                                }
+                                </style>
                     </div>
 
 
