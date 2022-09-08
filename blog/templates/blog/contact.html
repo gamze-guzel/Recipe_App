@@ -17,6 +17,7 @@
   <link rel="stylesheet" type="'text/css" href="{% static 'blog/style.css' %}" /> -->
 
 
+
 </head>
 <body>
      
@@ -32,7 +33,7 @@
     </div>
     
 
-    <section>
+    <section style= "background-color: #ccc">
         <div class=" section-header">
             <div class=" container" style= "background-color: #ccc" >
                 <h2>Contact Info</h2>
@@ -48,13 +49,17 @@
 
                 <div class="contact-info" style= "background-color: #ccc">
                     <div class="contact-info-item">
-                        <div class="contact-info-icon">
+                        <!-- <div class="contact-info-icon">
                             <i class= "fas fa-home" style= "background-color: #ccc"></i>
 
-                        </div>
-
+                        </div> -->
+                        <!-- <link rel="stylesheet" type="'text/css" href="{% static 'blog/style.css' %}" /> -->
+                        
+                             <img src={% static "blog/homeicon.png" %} width="64px" height="64px"> 
+                        
+                        
                         <div
-                        class="contact-info-content">
+                        class="contact-info-content" style= "background-color: #ccc">
                     <h4>Address</h4>
                     <p> 1007 N Orange St 4th Floor<br/>
                     Wilmington, Delaware <br
@@ -70,6 +75,7 @@
 
                  <div
                  class="contact-info-content">
+                 <img src={% static "blog/phoneicon.webp" %} width="64px" height="64px"> 
                  <h4>Phone</h4>
                  <p>302-445-1211</p>
                 </div>   
@@ -85,6 +91,7 @@
                
                <div
                class="contact-info-content">
+               <img src={% static "blog/mail-512.webp" %} width="84px" height="84px"> 
                <h4>Email</h4>
                <p>gamze@zipcode.com</p>
             </div>
